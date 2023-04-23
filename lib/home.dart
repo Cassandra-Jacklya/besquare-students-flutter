@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
           Flexible(
             flex: 1,
             child: ElevatedButton(onPressed: () { 
-              Navigator.pushNamed(context, '/details');
+              Navigator.pushNamed(context, '/cassandra', arguments: list[0]);
              },
              style: ElevatedButton.styleFrom(
               minimumSize: const Size.fromHeight(60),
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
           Flexible(
             flex: 1,
             child: ElevatedButton(onPressed: () { 
-
+              Navigator.pushNamed(context, '/amarnath', arguments: list[1]);
              },
              style: ElevatedButton.styleFrom(
               minimumSize: const Size.fromHeight(60),
@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
           Flexible(
             flex: 1,
             child: ElevatedButton(onPressed: () { 
-
+              Navigator.pushNamed(context, '/nornaleyda', arguments: list[2]);
              },
              style: ElevatedButton.styleFrom(
               minimumSize: const Size.fromHeight(60),
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
           Flexible(
             flex: 1,
             child: ElevatedButton(onPressed: () { 
-
+              Navigator.pushNamed(context, '/haziq', arguments: list[3]);
              },
              style: ElevatedButton.styleFrom(
               minimumSize: const Size.fromHeight(60),
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
           Flexible(
             flex: 1,
             child: ElevatedButton(onPressed: () { 
-
+              Navigator.pushNamed(context, '/bentley', arguments: list[4]);
              },
              style: ElevatedButton.styleFrom(
               minimumSize: const Size.fromHeight(60),
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
           Flexible(
             flex: 1,
             child: ElevatedButton(onPressed: () { 
-
+              Navigator.pushNamed(context, '/yuvaraj', arguments: list[5]);
              },
              style: ElevatedButton.styleFrom(
               minimumSize: const Size.fromHeight(60),

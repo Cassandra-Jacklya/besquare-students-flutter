@@ -1,21 +1,29 @@
 import 'package:flutter/material.dart';
 
-class Details extends StatefulWidget {
-  const Details({super.key});
+class Details extends StatelessWidget {
+  const Details({super.key, required this.inputName});
 
-  @override
-  State<Details> createState() => _MyWidgetState();
-}
-
-class _MyWidgetState extends State<Details> {
-
-
+  final String inputName;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Student Details')),
+      body: Text(getStudent(inputName),
+        style: const TextStyle(fontSize: 14),
+      ),
     );
   }
+
+  String getStudent(String name) {
+    String output = "No details found";
+    List<Students> studentList = details();
+    for (Students stu in studentList) {
+      if (stu.name == name) {
+        output = stu.toString();
+      }
+    }
+    return output;
+  } 
 }
 
 class Students {
@@ -31,7 +39,7 @@ class Students {
   }
 }
 
-List<Students> details(String name) {
+List<Students> details() {
   Students stu1 = Students('Cassandra Jacklya', 21, 'Grade A');
   Students stu2 = Students('Amarnath Paramesvaran', 25, 'Grade A');
   Students stu3 = Students('Nornaleyda Rosli', 23, 'Grade A');

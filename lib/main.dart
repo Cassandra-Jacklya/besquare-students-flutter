@@ -20,7 +20,12 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
-        '/details': (context) => const Details(),
+        '/cassandra': (context) => const Details(inputName: 'Cassandra Jacklya',),
+        '/amarnath': (context) => const Details(inputName: 'Amarnath Paramesvaran',),
+        '/nornaleyda': (context) => const Details(inputName: 'Nornaleyda Rosli',),
+        '/haziq': (context) => const Details(inputName: 'Haziq Khalid',),
+        '/bentley': (context) => const Details(inputName: 'Bentley Teh',),
+        '/yuvaraj': (context) => const Details(inputName: 'Yuvaraj Elamko',),
       },
     );
   }
